@@ -1,74 +1,52 @@
+:root {
+  --primaryColor: #90A959;
+  --secondColor: #E9B872;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainRed: #C45151;
+  --mainGreen: #4CAF50;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aliceblue;
+  background: var(--secondColor);
+  color: var(--mainBlack);
 }
 
-.container {
-  margin: auto;
-  max-width: 600px;
-}
-
-.budget {
-  padding: 30px;
-  margin-top: 50px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: -9px 17px 13px rgb(0, 0, 0 / 16%);
-}
-
-.item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.list-container {
-  margin: 0;
-  max-width: 600px;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  justify-content: flex-start;
-  border: 3px aliceblue solid;
-  border-radius: 10px;
-  margin: 0;
-  background: #fff;
-}
-
-.list .title {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.list .cost {
-  text-align: right;
+h1 {
+  margin: 1rem 0;
 }
 
 .btn {
-  background-color: #007bff;
-  color: white;
-  border: 1px solid #007bff;
-  border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 16px;
-  font-weight: bold;
+  text-decoration: none;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
   text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
   cursor: pointer;
-  transition: 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
 }
 
 .btn:hover {
-  background-color: #0057b7;
-  box-shadow: 0 0 5px 0 #0057b7;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.btn:active {
-  background-color: #003797;
-  border-color: #003797;
-  box-shadow: 0 0 10px 0 #003797;
+.btn-icon {
+  margin-left: 0.75rem;
+  font-size: 1.2rem;
 }
